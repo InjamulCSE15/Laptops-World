@@ -16,7 +16,7 @@ const AddProducts = () => {
             price: data.price
         }
 
-        const url = `http://localhost:5000/addProduct`;
+        const url = `https://mysterious-sea-38335.herokuapp.com/addProduct`;
         console.log(productData.price)
         fetch(url,{
             method: 'POST',

@@ -6,7 +6,7 @@ const Home = () => {
 
     const [laptops, setLaptops] = useState([]);
     useEffect (() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://mysterious-sea-38335.herokuapp.com/products')
         .then(response => response.json())
         .then(data =>setLaptops(data))
     },[])
