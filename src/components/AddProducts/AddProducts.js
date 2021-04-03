@@ -1,4 +1,5 @@
 import axios from 'axios';
+import './AddProduct.css';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 
@@ -13,6 +14,7 @@ const AddProducts = () => {
         const productData = {
             name: data.name,
             imageURL: imageURL,
+            details: data.details,
             price: data.price
         }
 
@@ -44,16 +46,20 @@ const AddProducts = () => {
     }
 
     return (
-        <div className="text-center">
-            <h4 className="mt-2">Add your new products here</h4>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input name="name" defaultValue="Acer Spin 5 (2020)" ref={register} />
+        <div className="body">
+            <h4 className="sign mt-2" align="center">Add your new products here</h4>
+        <form className="form1" onSubmit={handleSubmit(onSubmit)}>
+          <input className="un" name="name" defaultValue="Acer Spin 5 (2020)" ref={register} />
           <br/>
-          <input name="price" defaultValue="55000" ref={register} />
+          <input className="un" name="details" defaultValue="Short Review" ref={register} />
           <br/>
-          <input className="mt-2"name="exampleRequired" type="file" onChange={handleImageUpload} />
+          <input className="un" name="price" defaultValue="55000" ref={register} />
           <br/>
-          <input className="mt-2" type="submit" />
+          <input className="unFile mt-2" name="exampleRequired" type="file" onChange={handleImageUpload} />
+          <br/>
+          <input className="upload" type="submit" />
+          <br/>
+          <br/>
         </form>
         </div>
     );
