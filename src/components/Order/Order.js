@@ -36,9 +36,9 @@ const Order = () => {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td><Link to="/" className="btn btn-warning"><i className="fa fa-angle-left"></i> Continue Shopping</Link></td>
+                            <td><Link to="/home" className="btn btn-warning"><i className="fa fa-angle-left"></i> Continue Shopping</Link></td>
                             <td  className="hidden-xs"></td>
-                            <td className="hidden-xs text-center"><strong>Total 55000 BDT</strong></td>
+                            <td className="hidden-xs text-center"><strong>Total: 55000 BDT</strong></td>
                             <td><Link to="/checkout" className="btn btn-success btn-block">Checkout <i className="fa fa-angle-right"></i></Link></td>
                         </tr>
                     </tfoot>
