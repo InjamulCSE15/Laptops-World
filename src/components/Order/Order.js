@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Order = () => {
     return (
@@ -35,10 +36,10 @@ const Order = () => {
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td><a href="/home" className="btn btn-warning"><i className="fa fa-angle-left"></i> Continue Shopping</a></td>
+                            <td><Link to="/" className="btn btn-warning"><i className="fa fa-angle-left"></i> Continue Shopping</Link></td>
                             <td  className="hidden-xs"></td>
                             <td className="hidden-xs text-center"><strong>Total 55000 BDT</strong></td>
-                            <td><a href="#" className="btn btn-success btn-block">Checkout <i className="fa fa-angle-right"></i></a></td>
+                            <td><Link to="/checkout" className="btn btn-success btn-block">Checkout <i className="fa fa-angle-right"></i></Link></td>
                         </tr>
                     </tfoot>
                 </table>
