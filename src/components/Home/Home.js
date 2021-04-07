@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className="row row-cols-md-4 g-4 m-auto">
             {
-                laptops.map(laptop => <Accessories laptop={laptop}></Accessories>)
+                laptops.map(laptop => <Accessories laptop={laptop} key={laptop.id}></Accessories>)
             }
         </div>
     );

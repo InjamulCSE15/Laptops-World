@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import './Header.css';
 
 
 const Header = () => {
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container-fluid">
@@ -19,6 +21,7 @@ const Header = () => {
                         <Link to="/order" className="nav-link">Order</Link>
                         <Link to="/addProducts" className="nav-link">Admin</Link>
                         <Link to="/login" className="nav-link btn btn-outline-danger">Login</Link>
+                        <Link to="#" className="nav-link btn btn-success">{loggedInUser.name}</Link>
                     </div>
                 </div>
             </div>

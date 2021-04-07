@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import './App.css';
 import AddProducts from "./components/AddProducts/AddProducts";
+import Checkout from "./components/Checkout/Checkout";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
@@ -21,7 +22,6 @@ function App() {
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
     <Router>
       <Header />
-      <button className="btn btn-outline-success m-2">User: {loggedInUser.name}</button>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -32,6 +32,9 @@ function App() {
           <PrivateRoute path="/order">
             <Order />
           </PrivateRoute>
+          <PrivateRoute path="/checkout/:id">
+            <Checkout></Checkout>
+            </PrivateRoute>
           <PrivateRoute path="/addProducts">
           <AddProducts />
           </PrivateRoute>

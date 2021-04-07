@@ -43,7 +43,7 @@ const Login = () => {
                 <input className="un " align="center" type="submit" value={newUser ? 'Sign Up' : 'Sign In'} ></input> */}
                 <br />
                 <br />
-                <button className="submit-google" align="center" onClick={handleGoogleSignIn} >     Continue with Google</button>
+                <button className="submit-google" align="center" onClick={handleGoogleSignIn} > <FontAwesomeIcon  icon={faGoogle}></FontAwesomeIcon>  Continue with Google</button>
                 <br/>
                 <br/>
                 <>

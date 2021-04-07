@@ -53,7 +53,7 @@ const AddProducts = () => {
           <br/>
           <input className="un" name="details" defaultValue="Short Review" ref={register} />
           <br/>
-          <input className="un" name="price" defaultValue="55000" ref={register} />
+          <input className="un" name="price" defaultValue="55000 BDT" ref={register} />
           <br/>
           <input className="unFile mt-2" name="exampleRequired" type="file" onChange={handleImageUpload} />
           <br/>
