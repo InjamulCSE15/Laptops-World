@@ -6,7 +6,7 @@ const Order = () => {
     const [items, setItems] = useState([]);
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     useEffect(() => {
-        fetch('https://mysterious-sea-38335.herokuapp.com/orderedItems?email='+loggedInUser.email)
+        fetch('https://laptop-world-c9fba.web.app/orderedItems?email='+loggedInUser.email)
             .then(response => response.json())
             .then(data => setItems(data));
     }, [])
