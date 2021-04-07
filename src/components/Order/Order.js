@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 
 const Order = () => {
     const [items, setItems] = useState([]);
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     useEffect(() => {
-        fetch('https://mysterious-sea-38335.herokuapp.com/orderedItems')
+        fetch('https://mysterious-sea-38335.herokuapp.com/orderedItems?email='+loggedInUser.email)
             .then(response => response.json())
             .then(data => setItems(data));
     }, [])
