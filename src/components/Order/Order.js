@@ -12,7 +12,7 @@ const Order = () => {
     }, [])
     return (
         <div className="container mt-3">
-            <h3>You ordered {items.length}items:</h3>
+            <h3>You ordered {items.length} items:</h3>
             
             <table className="table mt-3">
                 <thead className="table-dark">
