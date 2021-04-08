@@ -8,5 +8,6 @@ How to make this website:
 3.Integrating a shopping cart or checkout
 4.Defining products within order page
 5.Setting up a cart summary and cart or order preview or review
+6.Creating server site Database with mongodb
 
 This is the 10th Assignment from Programming Hero Batch 3.
