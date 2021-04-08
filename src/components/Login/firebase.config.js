@@ -1,10 +1,8 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyCo-ttynnYhn5vmGTJAiNtbMMO9DCf8VE8",
-    authDomain: "laptop-world-c9fba.firebaseapp.com",
-    projectId: "laptop-world-c9fba",
-    storageBucket: "laptop-world-c9fba.appspot.com",
-    messagingSenderId: "571167217224",
-    appId: "1:571167217224:web:350e322eecf58b9ef6aa7d"
-  };
-
-export default firebaseConfig;
+  apiKey: "AIzaSyBBkNmA3B4Fu0FhxcQVXMMyQoN-o12mFtU",
+  authDomain: "laptops-world-assignment10.firebaseapp.com",
+  projectId: "laptops-world-assignment10",
+  storageBucket: "laptops-world-assignment10.appspot.com",
+  messagingSenderId: "1012660180360",
+  appId: "1:1012660180360:web:3a3ab0e2bee9b17651563d"
+};
