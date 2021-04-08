@@ -45,7 +45,7 @@ const Checkout = () => {
             date: orderedDate
         }
         console.log(detailsOrdered);
-        fetch('http://localhost:5000/checkoutItems', {
+        fetch('https://mysterious-sea-38335.herokuapp.com/checkoutItems', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(detailsOrdered)
